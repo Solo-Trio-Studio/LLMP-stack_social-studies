@@ -1,1 +1,1 @@
-Use CentOS & lighttpd
+Use lighttpd
