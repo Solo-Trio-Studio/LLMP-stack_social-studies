@@ -51,8 +51,8 @@
 	<t>Interpretation: https://winterune.tumblr.com/post/152397510587/the-27-tritype-discriptions</t>
 	<h1>Color Pallete</h1>
 	<p>
-		- : string colors = [|"red"; "green"; "blue"; "cyan"; "yellow"; "magenta"|]
-		- : string palletes = [|"yellow magenta"; "cyan magenta"; "cyan yellow"; "green blue"; "red blue"; "red green"|]
+		colors = ["red"; "green"; "blue"; "cyan"; "yellow"; "magenta"]
+		palletes = ["yellow magenta"; "cyan magenta"; "cyan yellow"; "green blue"; "red blue"; "red green"]
 		for i = 0 to 5 do
 		  print_endline colors.(i);;
 		  print_endline "goes with"
@@ -62,32 +62,33 @@
 	</p>
 	<h1>Dark Pattern Taxonomy</h1>
 	<p>
-		console.log("The dark patterns you aren't wary of are not your dark pattern personality type.");
-		console.log("Nagged: Redirects users to expected functionality.");
-		console.log("Obstructed: Makes it difficult for users to interact.");
-		console.log("Sneaked: Hides or delays useful information.");
-		console.log("Interface-interfered: Manipulates the user interface to emphasize certain aspects.");
-		console.log("Forced-actioned: Requires users to perform an action to access functionality.");
-		console.log("Overloaded: Presents a large amount of information to prompt users to share more data.");
-		console.log("Stirred: Uses visual nudges or appeals to users' emotions to affect their choices.");
-		console.log("Hindered: Makes it difficult or impossible for users to manage their data or learn about their privacy options.");
-		console.log("Fickled: Inconsistent or unclear design that makes it difficult for users to understand the purpose of data processing or navigate data protection control tools.");
-		console.log("Left in the dark: Hides data protection control tools or information, or leaves users unsure of how their data is processed.");
-		console.log("De facto forced: Forces users to take an action to perform another action."); 
-		console.log("Obstacled: Dissuades users from taking certain actions using obstacles.");
-		console.log("others include:.");
-		console.log("7 chakra targeting.");
-		console.log("qualia that stiffen spines.");
-		console.log("black & green euler spirals.");
-		console.log("x^2 + 4 geometry, or otherwise followings of the numeric sequence.");
+		The dark patterns you aren't wary of are not your dark pattern personality type.
+		Nagged: Redirects users to expected functionality.
+		Obstructed: Makes it difficult for users to interact.
+		Sneaked: Hides or delays useful information.
+		Interface-interfered: Manipulates the user interface to emphasize certain aspects.
+		Forced-actioned: Requires users to perform an action to access functionality.
+		Overloaded: Presents a large amount of information to prompt users to share more data.
+		Stirred: Uses visual nudges or appeals to users' emotions to affect their choices.
+		Hindered: Makes it difficult or impossible for users to manage their data or learn about their privacy options.
+		Fickled: Inconsistent or unclear design that makes it difficult for users to understand the purpose of data processing or navigate data protection control tools.
+		Left in the dark: Hides data protection control tools or information, or leaves users unsure of how their data is processed.
+		De facto forced: Forces users to take an action to perform another action. 
+		Obstacled: Dissuades users from taking certain actions using obstacles.
+		
+		others include:
+		7 chakra targeting.
+		qualia that stiffen spines.
+		black & green euler spirals.
+		x^2 + 4 geometry, or otherwise followings of the numeric sequence.
 	</p> 
 	<h1>Funny Quotes</h1>
 	<p>
 		Sla fa boom aw, onen finen, ja ju je jo, I followed a seafood diet but it didn't follow be back so I unfollowed it and don't eat food when I see it smh.
 	</p>
 	<h1>Short Scary Story</h1>
-	<p>
-		quotes = [
+	<p id="story">
+		const QUOTES = [
 			"You don't even know that you're alive, 81^3#!",
 			"Green number 4, close the door!",
 			"You're not perfect!",
@@ -131,8 +132,8 @@
 		    	"Let's turn it up."
 		]
 		
-		for (x <- quotes) {
-		         println(x)
+		for (const x of QUOTES) {
+		         document.getElementById("story").innerHTML += "\n"+x;
 		}
 	</p>
 	<h1>Communities of Choice</h1>
