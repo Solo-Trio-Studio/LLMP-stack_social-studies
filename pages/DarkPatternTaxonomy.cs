@@ -1,6 +1,6 @@
 using System; 
-namespace App { 
-    class  { 
+namespace DarkPatternTaxonomy { 
+    class DarkPatternTaxonomy { 
         static void Main(string[] args) { 
 	    Console.WriteLine("The dark patterns you aren't wary of are not your dark pattern personality type.");
 	    Console.WriteLine("Nagged: Redirects users to expected functionality.");
