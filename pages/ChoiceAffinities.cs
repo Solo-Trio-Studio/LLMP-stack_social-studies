@@ -1,5 +1,5 @@
 using System; 
-namespace ChoiceAffinities { 
+namespace ChoiceAffinitiesApp { 
     class ChoiceAffinities { 
         static void Main(string[] args) {
             Console.WriteLine("Affinities of Choice"); 
